@@ -21,3 +21,23 @@ body {
         padding: 15px 0;
     }
 }
+
+.viewCounter {
+    color: #12ABB2;
+    display: inline;
+}
+.tags {
+    color: #12AB82;
+    display: inline;
+    font-style: italic;
+}
+.details {
+    display: inline;
+}
+.story-img {
+    margin-top: 25%;
+    display: block;
+}
+.new_post_button {
+    float: right;
+}
