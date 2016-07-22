@@ -2,10 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Post
 from .forms import BlogPostForm
-from django.contrib import messages, auth
-from django.core.urlresolvers import reverse
-from .forms import UserRegistrationForm, UserLoginForm
-from django.template.context_processors import csrf
+
 
 
 
