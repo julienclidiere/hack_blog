@@ -4,4 +4,4 @@ django-forms-bootstrap==3.0.1
 git+https://github.com/NielMc/My-ReusableAuthPackage
 wheel==0.24.0
 gunicorn==19.4
-dj­database­url==0.4.1
+dj-database-url==0.4.1
