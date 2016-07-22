@@ -17,7 +17,7 @@
                         <p>{{ post.content }}</p>
                         <p><button class="btn btn-default" onclick="location.href='/blog'">Back to Blog</button>
                         <button class="btn btn-default" onclick="location.href='edit'">Edit</button> </p>
-                    <p>{{ post.published_date }}    |   Views: {{ post.views }} | <strong> Tag: {{ post.tag }}</strong></p>
+                    <p class="details">{{ post.published_date }}  <strong>Views</strong> <p class="viewCounter">{{ post.views }}</p>  <strong>Tag </strong><p class="tags">{{ post.tag }}</p></p>
                 </div>
             </div>
         </div>
