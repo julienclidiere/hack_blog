@@ -23,8 +23,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3a9oti=8qlh%rs!8!vy84gw4y8v)tufa1ubg%6rkt5it6ewrmt'
 
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -36,8 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'reusable_auth',
     'django_forms_bootstrap',
+    'accounts',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -109,5 +107,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTH_USER_MODEL = 'reusable_auth.User'
-AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend', 'reusable_auth.backends.EmailAuth',)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),) #static directory at the project level
+
+AUTH_USER_MODEL = 'accounts.User'
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend', 'accounts.backends.EmailAuth',)
