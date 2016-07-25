@@ -20,7 +20,7 @@ from django.contrib.staticfiles import views as static_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.post_list, name="blogview"),
+    url(r'^blog', views.post_list, name="blogview"),
     url(r'^$', views.post_list, name="index"),
     url(r'^$', views.post_list, name="profile"),
     url(r'^post/new$', views.new_post, name="new_post"),
